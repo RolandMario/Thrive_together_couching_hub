@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Footer from './components/footer';
 import Navigation from './components/navigation';
 import Image from 'next/image';
+import PremiumBook from './components/premiumBook';
 
 
 const statusMessages = {
@@ -247,6 +248,7 @@ const HomePage = () => (
           </div>
         </div>
       </div>
+      <PremiumBook/>
     </div>
   </div>
 );
