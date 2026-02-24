@@ -64,7 +64,7 @@ const Navigation = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-gray-100">
+        <div className="md:hidden bg-black text-white border-b border-gray-100">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link
@@ -76,7 +76,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Link 
-              href={'/book-session'}
+              href={'/book'}
               className="w-full text-center mt-4 bg-teal-600 text-white px-4 py-3 rounded-lg font-medium"
             >
               Book a Session
