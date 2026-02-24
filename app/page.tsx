@@ -4,6 +4,7 @@ import { Menu, X, Heart, Users, BookOpen, Star, Mail, Phone, Calendar, ArrowRigh
 import Link from 'next/link';
 import Footer from './components/footer';
 import Navigation from './components/navigation';
+import Image from 'next/image';
 
 
 const statusMessages = {
@@ -47,10 +48,18 @@ const LeadMagnet = () => {
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
             <Download className="w-3 h-3" /> Free Resource
           </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Download: "The Connected Parent's Guide"</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Download: "The Peer Pressure Vaccine"</h3>
           <p className="text-gray-600 mb-4">
-            Unlock the 5 strategies to bridging the communication gap with your teenager today. Join our community and get this exclusive eBook for free.
+            Unlock the 5 quick and practical steps to help your teenager beat peer pressure, build confidence and develop a healthy self-worth.
           </p>
+          <Image
+          src={"/assets/book_cover.jpeg"}
+          alt='book cover'
+          width={300}
+          height={200}
+          
+          
+          />
         </div>
         <div className="w-full md:w-auto">
           {status === 'success' ? (
@@ -90,7 +99,7 @@ const LeadMagnet = () => {
 const HomePage = () => (
   <div className="animate-fade-in">
     {/* Hero Section */}
-    <header className="relative  bg-blue-300 bg overflow-hidden">
+    <header className="relative  bg-blue-400 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="relative z-10">
@@ -137,9 +146,12 @@ const HomePage = () => (
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
           We are a youth-focused coaching and family empowerment space committed to helping <span className="font-semibold text-teal-600">Nigerian Teenagers</span> develop a healthy identity, build emotional strength, reduce distractions, and grow up with confidence and values, while supporting parents, teachers, and caregivers who guide them.
         </p>
-        <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg text-gray-600 leading-relaxed mb-10">
           We believe that when teens are understood, supported, and empowered, they rise, and when they rise, families and communities rise too.
         </p>
+         <Link href={'https://chat.whatsapp.com/It1FnFzWT2rC7Z42htmWqE?mode=gi_t'} className=" mt-10 px-8 py-4 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg">
+                Join Our Parents Community
+          </Link>
       </div>
 
       {/* Vision & Mission Cards */}
@@ -180,12 +192,14 @@ const HomePage = () => (
       </div>
 
       {/* Services Preview Grid */}
+      <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">What We do</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        
         {[
-          { icon: Users, title: "Teen Coaching", desc: "Mentorship to help them navigate identity and pressure." },
-          { icon: Heart, title: "Parent Guidance", desc: "Bridging the gap so you can connect deeply with your child." },
+          { icon: Users, title: "Teen Coaching", desc: "Mentorship to help teens navigate identity confusion, negative peer pressure, and external distractions." },
+          { icon: Heart, title: "Parent Guidance", desc: "Bridging the gap, so you can connect deeply with your child in this noisy digital world." },
           { icon: BookOpen, title: "Assessments", desc: "Psychometric tools to uncover strengths and personality styles." },
-          { icon: Star, title: "Confidence Programs", desc: "Building self-leadership and emotional intelligence in girls." },
+          { icon: Star, title: "Confidence Programs", desc: "Confidence & Identity Building Programmes: Building identity, confidence and resilience in girls." },
           { icon: Users, title: "Training", desc: "Equipping teachers and youth workers with behavioral insights." },
           { icon: CheckCircle, title: "Leadership", desc: "Fostering the next generation of emotionally intelligent leaders." }
         ].map((item, idx) => (
@@ -197,6 +211,8 @@ const HomePage = () => (
             <p className="text-gray-600">{item.desc}</p>
           </div>
         ))}
+
+
       </div>
 
       <LeadMagnet />
@@ -210,9 +226,17 @@ const HomePage = () => (
             <p className="text-gray-600 mb-8 leading-relaxed">
               With over 12 years of hands-on experience, Nikky is widely known for her warm approach, deep empathy, and ability to create transformation in both teens and parents.
             </p>
-            <Link href={'/about'} className="flex items-center text-teal-700 font-semibold hover:gap-4 gap-2 transition-all">
+            <Link href={'/about'} className="flex items-center text-teal-700 font-semibold hover:gap-4 gap-2 transition-all mb-10">
               Read Full Bio <ArrowRight className="w-5 h-5" />
             </Link>
+                     <div className="flex justify-center  w-full ">
+            <Link 
+              href="https://chat.whatsapp.com/It1FnFzWT2rC7Z42htmWqE?mode=gi_t" 
+              className="mt-10 px-8 py-4 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg inline-block"
+            >
+              Join Our Parents Community
+            </Link>
+          </div>
           </div>
           <div className="h-64 md:h-auto bg-gray-200">
              <img 

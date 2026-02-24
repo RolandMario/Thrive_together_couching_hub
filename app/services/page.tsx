@@ -34,21 +34,21 @@ const ServicesPage = () => {
               <CheckCircle className="w-6 h-6 text-teal-500 flex-shrink-0" />
               <div>
                 <h3 className="font-bold text-gray-900">1:1 Coaching & Mentorship</h3>
-                <p className="text-sm text-gray-600">Personalized sessions tackling identity, peer pressure, and digital distractions.</p>
+                <p className="text-sm text-gray-600">Personalized sessions tackling Identity <b>Confusion</b> , <b>Negative</b> Peer Pressure, Digital Distractions.</p>
               </div>
             </li>
             <li className="flex gap-3">
               <CheckCircle className="w-6 h-6 text-teal-500 flex-shrink-0" />
               <div>
                 <h3 className="font-bold text-gray-900">Confidence & Identity Programs</h3>
-                <p className="text-sm text-gray-600">Specialized tracks for girls to build self-worth and resilience.</p>
+                <p className="text-sm text-gray-600">Specialized <strong>programs</strong> for girls to build self worth, <b>emotional intelligence</b>, and resilience.</p>
               </div>
             </li>
             <li className="flex gap-3">
               <CheckCircle className="w-6 h-6 text-teal-500 flex-shrink-0" />
               <div>
                 <h3 className="font-bold text-gray-900">Psychometric Assessments</h3>
-                <p className="text-sm text-gray-600">Discover learning styles, personality traits, and career inclinations.</p>
+                <p className="text-sm text-gray-600"> Discover attachment styles, unique personality traits, and career inclinations.</p>
               </div>
             </li>
           </ul>

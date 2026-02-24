@@ -43,24 +43,45 @@ const BookSessionPage = () => {
 
   const services: Service[] = [
     { id: 1, title: 'Discovery Call', duration: '15 mins', price: 'Free', description: 'A quick chat to see if we are a good fit.' },
-    { id: 2, title: 'Teen Coaching Session', duration: '60 mins', price: '₦25,000', description: '1:1 personalized coaching for your teenager.' },
-    { id: 3, title: 'Parent Consultation', duration: '60 mins', price: '₦30,000', description: 'Guidance and strategies for parents.' },
-    { id: 4, title: 'Psychometric Assessment', duration: '90 mins', price: '₦45,000', description: 'In-depth personality and career assessment.' },
+    { id: 2, title: 'Teen Coaching Session', duration: '60 mins', price: '₦25,000 per session', description: '1:1 personalized coaching for your teenager.' },
+    { id: 3, title: 'Parent Consultation', duration: '60 mins', price: '₦30,000 per session', description: 'Guidance and strategies for parents.' },
+    { id: 4, title: 'Psychometric Assessment', duration: '90 mins', price: '₦45,000 per session', description: 'In-depth psychometric assessments for 1 teen and parents, with report and debrief session.' },
   ];
 
   // Helper to generate dates
+  // const getDates = (): Date[] => {
+  //   const dates = [];
+  //   for (let i = 1; i <= 4; i++) {
+  //     const d = new Date();
+  //     d.setDate(d.getDate() + i);
+  //     dates.push(d);
+  //   }
+  //   return dates;
+  // };
+
   const getDates = (): Date[] => {
-    const dates = [];
-    for (let i = 1; i <= 5; i++) {
-      const d = new Date();
-      d.setDate(d.getDate() + i);
+  const dates: Date[] = [];
+  let daysAdded = 0;
+  let iterator = 1;
+
+  while (daysAdded < 6) {
+    const d = new Date();
+    d.setDate(d.getDate() + iterator);
+
+    // .getDay() returns 0 for Sunday
+    if (d.getDay() !== 0) {
       dates.push(d);
+      daysAdded++;
     }
-    return dates;
-  };
+
+    iterator++;
+  }
+
+  return dates;
+};
 
   const dates = getDates();
-  const times = ['09:00 AM', '11:00 AM', '02:00 PM', '04:00 PM'];
+  const times = ['10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM'];
 
   /**
    * NAVIGATION HANDLERS
@@ -149,7 +170,7 @@ const BookSessionPage = () => {
                     <button
                       key={idx}
                       onClick={() => setSelectedDate(date)}
-                      className={`p-3 rounded-lg text-left border transition-all ${selectedDate?.getTime() === date.getTime() ? 'bg-teal-600 text-white border-teal-600' : 'bg-white border-gray-200 hover:bg-gray-50'}`}
+                      className={`p-3 rounded-lg text-left border transition-all ${selectedDate?.toDateString() === date.toDateString() ? 'bg-teal-600 text-white border-teal-600' : 'bg-white border-gray-200 hover:bg-gray-50'}`}
                     >
                       {date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}
                     </button>
