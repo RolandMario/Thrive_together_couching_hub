@@ -17,7 +17,7 @@ const statusMessages = {
 const PremiumBook = ()=>{
     return(
         <>
-              <div className=" bg-indigo-300 border-l-4 border-teal-600 p-8 rounded-r-xl shadow-sm my-12">
+              <div className=" bg-indigo-200 border-l-4 border-teal-600 p-8 rounded-r-xl shadow-sm my-12">
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="flex-1">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold uppercase tracking-wider mb-3">

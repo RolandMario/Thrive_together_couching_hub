@@ -24,7 +24,7 @@ export async function POST(request: Request) {
 
     // Email content setup
 const mailOptions = {
-    from: '"Thrive Together" <rolandmario2@gmail.com>',
+    from: '"Thrive Together" <thrivetogetherhubb@gmail.com>',
     to: email,
     subject: '🎁 Your Free Ebook Download',
     text: `Thanks for subscribing! Download your ebook here: https://your-site.com/ebook.pdf`,
