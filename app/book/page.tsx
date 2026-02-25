@@ -22,7 +22,7 @@ interface FormData {
   notes: string;
 }
 
-type BookingStatus = 'Confirm Booking' | 'processing' | 'confirmed';
+type BookingStatus = 'Confirm Booking' | 'processing' | 'confirmed'|'error';
 
 /**
  * PAGE: Book Session
@@ -96,12 +96,46 @@ const BookSessionPage = () => {
     if (step > 1) setStep(step - 1);
   };
 
-  const handleConfirm = () => {
+  const handleConfirm = async() => {
    
     setBookingStatus('processing');
-    setTimeout(() => {
-      setBookingStatus('confirmed');
-    }, 2000);
+    const combinedData = { ...formData, selectedService, selectedDate, selectedTime };
+    console.log('combined data: ', combinedData)
+        const submitWithRetry = async (retries = 5, delay = 1000) => {
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwCjhywYm4aLfqyQVxmVj-kUUvAbygQYp5v69LXUPr0eAIOQr_kyxPY5etOFEycPSjE1w/exec';
+      
+      try {
+        const response = await fetch(scriptURL, {
+          method: 'POST',
+          mode: 'no-cors', // Essential for Google Apps Script redirects
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            ...combinedData,
+            timestamp: new Date().toISOString(),
+            // totalPrice: SUITES.find(s => s.id === bookingData.suite)?.price
+          }),
+        });
+        
+        // With no-cors, we won't see response status, but success is implied if no exception is thrown
+        setBookingStatus('confirmed');
+        // setStep(3);
+      } catch (error) {
+        if (retries > 0) {
+          await new Promise(resolve => setTimeout(resolve, delay));
+          return submitWithRetry(retries - 1, delay * 2);
+        }
+        throw error;
+      }
+    };
+
+    try {
+      await submitWithRetry();
+    } catch (error) {
+      console.error('Submission Error:', error);
+      setBookingStatus('error');
+    }
     handleNext()
   };
 
