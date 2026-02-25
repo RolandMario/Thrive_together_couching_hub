@@ -180,7 +180,7 @@ const LeadMagnetPage = () => {
         <p className="text-gray-300 mb-8 max-w-xl mx-auto">
           Your teen receives over 3,000 messages per day telling them who they should be. Ensure you are the strongest voice in that process.
         </p>
-        <div className="max-w-md mx-auto bg-white p-6 rounded-xl text-left">
+        <div className="max-w-md mx-auto bg-white p-6 rounded-xl text-left text-black">
            <LeadMagnetForm btnText="DOWNLOAD FREE COPY NOW" />
         </div>
       </div>

@@ -58,7 +58,7 @@ const LeadMagnetForm = ({ title, btnText }: LeadMagnetFormProps) => {
         type="email"
         required
         placeholder="Enter your best email address"
-        className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none w-full"
+        className="px-4 py-3 text-black rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none w-full"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
