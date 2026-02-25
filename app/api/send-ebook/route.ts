@@ -31,7 +31,7 @@ const mailOptions = {
     html: `
       <h1>Thanks for subscribing!</h1>
       <p>Click the button below to grab your free copy of the ebook.</p>
-      <a href="https://drive.google.com/uc?export=download&id=1lNRwn0HgkqTpbLXLRVyxi5qH8SV0I5OS" download="myfile.pdf" 
+      <a href="https://drive.google.com/uc?export=download&id=1YnBNOV8P_adriEw_d5ZMwYVt_4qLL-4c" download="myfile.pdf" 
          style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
          Download Ebook
       </a>
