@@ -298,7 +298,7 @@ const BookSessionPage = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Booking Confirmed!</h2>
                 <div className="text-gray-600 mb-6 max-w-md">
-                  Thank you, <strong>{formData.name}</strong>. A follow up communication will be sent to as soon as possible <strong>{formData.email}</strong> with details for your <strong>{selectedService?.title}</strong> on <strong>{selectedDate?.toLocaleDateString()} at {selectedTime}</strong>.
+                  Thank you, <strong>{formData.name}</strong>. A follow up communication will be sent to you as soon as possible <strong>{formData.email}</strong> with details for your <strong>{selectedService?.title}</strong> on <strong>{selectedDate?.toLocaleDateString()} at {selectedTime}</strong>.
                 </div>
                 <button 
                   onClick={() => window.location.reload()} 

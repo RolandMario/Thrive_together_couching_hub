@@ -38,7 +38,7 @@ const PremiumBook = ()=>{
         </div>
         <div className="w-full md:w-auto">
         <Link href={'https://selar.com/46308qs247'} target='_blank' className=" mt-10 px-8 py-4 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg">
-                BUY "Breaking the phone addiction"
+                Purchase a copy
           </Link>
         </div>
       </div>
