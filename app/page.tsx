@@ -235,7 +235,7 @@ const HomePage = () => (
               href="https://chat.whatsapp.com/It1FnFzWT2rC7Z42htmWqE?mode=gi_t" 
               className="mt-10 px-8 py-4 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg inline-block"
             >
-              Join Our Parents Community
+              Join Our Community
             </Link>
           </div>
           </div>
