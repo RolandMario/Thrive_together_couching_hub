@@ -105,9 +105,9 @@ const HomePage = () => (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="relative z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-              Helping Nigerian Teens <span className="text-teal-600">Thrive.</span>
+              Helping Nigerian Teens <span className="text-white">Thrive.</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-lg">
+            <p className="text-lg md:text-xl text-black mb-8 leading-relaxed max-w-lg">
               We are raising teenagers who know who they are, what they stand for, and how to show up with confidence and values in a noisy world.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -150,7 +150,7 @@ const HomePage = () => (
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
           We believe that when teens are understood, supported, and empowered, they rise, and when they rise, families and communities rise too.
         </p>
-         <Link href={'https://chat.whatsapp.com/It1FnFzWT2rC7Z42htmWqE?mode=gi_t'} className=" mt-10 px-8 py-4 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg">
+         <Link href={'https://chat.whatsapp.com/It1FnFzWT2rC7Z42htmWqE?mode=gi_t'} className=" mt-10 px-8 py-4 bg-[#93c481] text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg">
                 Join Our Community
           </Link>
       </div>
@@ -233,7 +233,7 @@ const HomePage = () => (
                      <div className="flex justify-center  w-full ">
             <Link 
               href="https://chat.whatsapp.com/It1FnFzWT2rC7Z42htmWqE?mode=gi_t" 
-              className="mt-10 px-8 py-4 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg inline-block"
+              className="mt-10 px-8 py-4 bg-[#93c481] text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg inline-block"
             >
               Join Our Community
             </Link>
