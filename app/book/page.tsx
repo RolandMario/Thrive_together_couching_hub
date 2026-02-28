@@ -64,7 +64,7 @@ const BookSessionPage = () => {
   let daysAdded = 0;
   let iterator = 1;
 
-  while (daysAdded < 6) {
+  while (daysAdded < 4) {
     const d = new Date();
     d.setDate(d.getDate() + iterator);
 

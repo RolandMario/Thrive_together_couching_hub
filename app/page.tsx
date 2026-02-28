@@ -122,10 +122,13 @@ const HomePage = () => (
           <div className="relative">
             {/* Abstract Background blob */}
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-orange-100 rounded-full blur-3xl opacity-50"></div>
-            <img 
+            <Image 
               src="/assets/Hero.png" 
               alt="Happy friends teenage group" 
-              className="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full z-10"
+              className="relative rounded-3xl shadow-2xl z-10"
+              width={600}
+              height={600}
+              
             />
           </div>
         </div>
