@@ -243,8 +243,8 @@ const HomePage = () => (
              <Image 
               src="/assets/author.jpeg" 
               alt="Nikky Nkeiruka Nzekwe" 
-              className="w-full h-full object-cover"
-              width={500}
+              
+              width={600}
               height={500}
             />
           </div>
