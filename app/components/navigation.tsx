@@ -44,7 +44,7 @@ const Navigation = () => {
             ))}
             <Link
               href={'/book'} 
-              className="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-full font-medium text-sm transition-all shadow-lg hover:shadow-xl"
+              className="bg-[#93c481] hover:bg-teal-700 text-white px-5 py-2.5 rounded-full font-medium text-sm transition-all shadow-lg hover:shadow-xl"
             >
               Book a Session
             </Link>
@@ -77,7 +77,7 @@ const Navigation = () => {
             ))}
             <Link 
               href={'/book'}
-              className="w-full text-center mt-4 bg-teal-600 text-white px-4 py-3 rounded-lg font-medium"
+              className="w-full text-center mt-4 bg-[#93c481] text-white px-4 py-3 rounded-lg font-medium"
             >
               Book a Session
             </Link>

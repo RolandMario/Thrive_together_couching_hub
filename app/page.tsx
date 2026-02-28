@@ -100,7 +100,7 @@ const LeadMagnet = () => {
 const HomePage = () => (
   <div className="animate-fade-in">
     {/* Hero Section */}
-    <header className="relative  bg-blue-400 overflow-hidden">
+    <header className="relative   bg-[#166f99] overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="relative z-10">
