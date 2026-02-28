@@ -111,10 +111,10 @@ const HomePage = () => (
               We are raising teenagers who know who they are, what they stand for, and how to show up with confidence and values in a noisy world.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href={'/services'} className="px-8 py-4 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg">
+              <Link href={'/services'} className="px-8 py-4 bg-[#93c481] text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg">
                 Explore Programs
               </Link>
-              <Link href={'/about'} className="px-8 py-4 bg-white text-teal-700 border border-teal-200 rounded-full font-semibold hover:bg-teal-50 transition">
+              <Link href={'/about'} className="px-8 py-4 bg-white text-[#93c481] border border-teal-200 rounded-full font-semibold hover:bg-teal-50 transition">
                 Meet Nikky
               </Link>
             </div>
@@ -205,7 +205,7 @@ const HomePage = () => (
           { icon: CheckCircle, title: "Leadership", desc: "Fostering the next generation of emotionally intelligent leaders." }
         ].map((item, idx) => (
           <div key={idx} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-12 h-12 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-6">
+            <div className="w-12 h-12 bg-teal-50 text-[#93c481] rounded-xl flex items-center justify-center mb-6">
               <item.icon className="w-6 h-6" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
