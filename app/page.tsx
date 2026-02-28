@@ -240,10 +240,12 @@ const HomePage = () => (
           </div>
           </div>
           <div className="h-64 md:h-auto bg-gray-200">
-             <img 
+             <Image 
               src="/assets/author.jpeg" 
               alt="Nikky Nkeiruka Nzekwe" 
               className="w-full h-full object-cover"
+              width={500}
+              height={500}
             />
           </div>
         </div>
