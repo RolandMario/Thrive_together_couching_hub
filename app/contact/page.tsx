@@ -14,7 +14,7 @@ const [formData, setFormData] = useState({
   firstName: '',
   lastName: '',
   email: '',
-  topic: 'Teen Coaching Inquiry',
+  topic: '2026 BootCamp Inquiry',
   message: ''
 });
 
@@ -170,6 +170,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       onChange={handleChange} 
       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 outline-none"
     >
+     <option>2026 BootCamp Inquiry</option>
       <option>Teen Coaching Inquiry</option>
       <option>Parent Coaching Inquiry</option>
       <option>Speaking Engagement</option>

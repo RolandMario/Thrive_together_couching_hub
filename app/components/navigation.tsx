@@ -10,7 +10,10 @@ const Navigation = () => {
     { name: 'About Me', id: '/about' },
     { name: 'Services', id: '/services' }, // Renamed "Book" to Services for clarity, contains booking info
     { name: 'Contact', id: '/contact' },
+    {name: 'Book Sales', id:'/book_sales'},
     { name: 'Free Guide', id: '/guide' },
+    {name: 'BootCamp', id:'/boot_camp_2026'},
+    
   ];
 
   return (
