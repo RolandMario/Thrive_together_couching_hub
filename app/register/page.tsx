@@ -42,7 +42,7 @@ export default function RegisterPage() {
     window.open(whatsappUrl, '_blank');
 
     // Optional: Show success message
-    alert("Registration details sent to WhatsApp! Please send your payment proof after chatting.");
+    // alert("Registration details sent to WhatsApp! Please send your payment proof after chatting.");
 
     setIsSubmitting(false);
   };
@@ -53,7 +53,7 @@ export default function RegisterPage() {
 
       <div className="max-w-4xl mx-auto px-6 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold tracking-tighter mb-4">Secure Your Spot</h1>
+          <h1 className="text-5xl font-bold tracking-tighter mb-4 text-black">Secure Your Spot</h1>
           <p className="text-xl text-zinc-600">
             Identity, Influence & Purpose Bootcamp 2026<br />
             26th – 28th August, 2026 | Enugu
@@ -64,24 +64,24 @@ export default function RegisterPage() {
           {/* Form */}
           <div className="md:col-span-3">
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-3xl shadow-sm">
-              <h2 className="text-2xl font-semibold mb-6">Participant Information</h2>
+              <h2 className="text-2xl font-semibold mb-6 text-black">Participant Information</h2>
 
               <div className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium mb-2">Daughter's Full Name <span className="text-red-500">*</span></label>
+                  <label className="block text-sm font-medium mb-2 text-black">Daughter's Full Name <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
                     required
-                    className="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
+                    className="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600 text-gray-600"
                     placeholder="Enter full name"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Age <span className="text-red-500">*</span></label>
+                  <label className="block text-sm font-medium mb-2 text-black">Age <span className="text-red-500">*</span></label>
                   <input
                     type="number"
                     name="age"
@@ -90,59 +90,59 @@ export default function RegisterPage() {
                     required
                     min="12"
                     max="17"
-                    className="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
+                    className="w-full text-gray-600 px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
                     placeholder="13"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Parent/Guardian Full Name <span className="text-red-500">*</span></label>
+                  <label className="block text-sm font-medium mb-2 text-black">Parent/Guardian Full Name <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     name="parentName"
                     value={formData.parentName}
                     onChange={handleChange}
                     required
-                    className="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
+                    className="w-full px-5 text-gray-600 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
                     placeholder="Enter parent name"
                   />
                 </div>
 
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium mb-2">Phone Number <span className="text-red-500">*</span></label>
+                    <label className="block text-sm font-medium mb-2 text-black">Phone Number <span className="text-red-500">*</span></label>
                     <input
                       type="tel"
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
+                      className="w-full px-5 text-gray-600 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
                       placeholder="080xxxxxxxxx"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">Email Address <span className="text-red-500">*</span></label>
+                    <label className="block text-sm font-medium mb-2 text-black">Email Address <span className="text-red-500">*</span></label>
                     <input
                       type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
+                      className="w-full px-5 py-4 text-gray-600 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
                       placeholder="parent@email.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">School (Optional)</label>
+                  <label className="block text-sm font-medium mb-2 text-black">School (Optional)</label>
                   <input
                     type="text"
                     name="school"
                     value={formData.school}
                     onChange={handleChange}
-                    className="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
+                    className="w-full px-5 py-4 text-gray-600 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
                     placeholder="School name"
                   />
                 </div>
@@ -161,7 +161,7 @@ export default function RegisterPage() {
           {/* Payment Sidebar */}
           <div className="md:col-span-2">
             <div className="bg-white p-8 rounded-3xl shadow-sm sticky top-8">
-              <h3 className="text-xl font-semibold mb-6">Payment Information</h3>
+              <h3 className="text-xl font-semibold mb-6 text-black">Payment Information</h3>
               
               <div className="space-y-6">
                 <div>
@@ -170,19 +170,19 @@ export default function RegisterPage() {
                 </div>
 
                 <div className="border-t pt-6">
-                  <p className="font-medium mb-4">Bank Transfer Details</p>
+                  <p className="font-medium mb-4 text-black">Bank Transfer Details</p>
                   <div className="space-y-4 text-sm">
                     <div>
                       <p className="text-zinc-500">Bank Name</p>
-                      <p className="font-medium">Zenith Bank</p>
+                      <p className="font-medium text-black">Zenith Bank</p>
                     </div>
                     <div>
                       <p className="text-zinc-500">Account Number</p>
-                      <p className="font-medium">1014937364</p>
+                      <p className="font-medium text-black">1014937364</p>
                     </div>
                     <div>
                       <p className="text-zinc-500">Account Name</p>
-                      <p className="font-medium">Girl-Woman Initiative for Sustainability and Education</p>
+                      <p className="font-medium text-black">Girl-Woman Initiative for Sustainability and Education</p>
                     </div>
                   </div>
                 </div>

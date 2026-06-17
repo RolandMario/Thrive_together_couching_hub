@@ -96,7 +96,7 @@ export default function BootcampLanding() {
                 ].map((text, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="w-6 h-6 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center flex-shrink-0 mt-0.5">✓</div>
-                    <p>{text}</p>
+                    <p className=' text-black'>{text}</p>
                   </div>
                 ))}
               </div>
@@ -151,7 +151,7 @@ export default function BootcampLanding() {
               <div><strong>Ages:</strong> 12 - 17 Years</div>
               <div><strong>Fee:</strong> ₦45,000</div>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 text-black">
               <div><strong>Location:</strong> Amadeo Event Centre, Ebeano Tunnel Crossing, Enugu</div>
               <div><strong>Group Size:</strong> 30 Girls Only</div>
               <div><strong>Includes:</strong> Workbook + 30-Day Alumni Support</div>
