@@ -168,7 +168,7 @@ export default function BootcampLanding() {
           {/* Schedule */}
       <section id="schedule" className="py-20 bg-zinc-900 text-white">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-center text-5xl font-bold tracking-tighter mb-16">THREE DAYS| FIVE PILLARS|<br />COMPLETE TRANSFORMATION.</h2>
+          <h2 className="text-center  text-3xl md:text-5xl font-bold tracking-tighter mb-16">THREE DAYS| FIVE PILLARS|<br />COMPLETE TRANSFORMATION.</h2>
           
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Day 1, Day 2, Day 3 cards - abbreviated for brevity but fully functional */}
