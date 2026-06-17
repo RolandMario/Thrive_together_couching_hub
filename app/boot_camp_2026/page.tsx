@@ -66,43 +66,15 @@ export default function BootcampLanding() {
           </div>
         </div>
       </section>
-
-
-            {/* Investment Message */}
-      <section className="py-16 bg-amber-50 border-b">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="inline-block bg-white px-8 py-3 rounded-2xl shadow text-lg font-medium text-amber-800 border border-amber-200">
-            You are not paying for 3 days of activities.<br />
-            <span className="font-semibold">You are investing in who she becomes for the next 30 years.</span>
-          </div>
-        </div>
-      </section>
-
+      
 
             {/* Is This Program Right For Your Daughter? */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16">
-            <div>
-              <h2 className="text-5xl font-bold tracking-tighter leading-none mb-8 text-black">IS THIS PROGRAM<br />RIGHT FOR YOUR DAUGHTER?</h2>
-              
-              <div className="space-y-4 text-lg">
-                {[
-                  "She is between 12 and 17 years old",
-                  "You want her to develop strong self-awareness before adulthood",
-                  "She is active or will soon be active on social media",
-                  "You desire to raise a leader who leads herself first",
-                  "Character and values are non-negotiable in your home"
-                ].map((text, i) => (
-                  <div key={i} className="flex gap-4">
-                    <div className="w-6 h-6 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center flex-shrink-0 mt-0.5">✓</div>
-                    <p className=' text-black'>{text}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
 
-            <div className="bg-zinc-900 text-white p-4 rounded-3xl">
+            {/* image */}
+              <div className="bg-zinc-900 text-white p-4 rounded-3xl">
               {/* <h3 className="text-teal-400 font-medium mb-2">THE INVISIBLE MENTOR EFFECT™</h3>
               <p className="text-2xl leading-tight">
                 Social media hands them an identity before they discover their own.
@@ -122,22 +94,41 @@ export default function BootcampLanding() {
                   sizes="100vw"          // Important for hero images
                 />
             </div>
+            <div>
+              <h2 className="text-5xl font-bold tracking-tighter leading-none mb-8 text-black">IS THIS PROGRAM<br />RIGHT FOR YOUR DAUGHTER?</h2>
+              
+              <div className="space-y-4 text-lg">
+                {[
+                  "She is between 12 and 17 years old",
+                  "You want her to develop strong self-awareness before adulthood",
+                  "She is active or will soon be active on social media",
+                  "You desire to raise a leader who leads herself first",
+                  "Character and values are non-negotiable in your home"
+                ].map((text, i) => (
+                  <div key={i} className="flex gap-4">
+                    <div className="w-6 h-6 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center flex-shrink-0 mt-0.5">✓</div>
+                    <p className=' text-black'>{text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          
           </div>
         </div>
       </section>
 
-
-          {/* About the Facilitator */}
-      <section className="py-20 bg-zinc-50">
+                  {/* Investment Message */}
+      <section className="py-16 bg-amber-50 border-b">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-semibold tracking-tight mb-8 text-black">ABOUT THE FACILITATOR</h2>
-          <p className="text-xl leading-relaxed max-w-3xl mx-auto text-zinc-700">
-            Your daughter will be coached by a certified Adolescent and Teens Coach with years of experience and a deep personal burden for raising confident, purpose-driven girls.
-          </p>
+          <div className="inline-block bg-white px-8 py-3 rounded-2xl shadow text-lg font-medium text-amber-800 border border-amber-200">
+            You are not paying for 3 days of activities.<br />
+            <span className="font-semibold">You are investing in who she becomes for the next 30 years.</span>
+          </div>
         </div>
       </section>
 
-      {/* Program Details */}
+            {/* Program Details */}
       <section id="program" className="py-20 border-t">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
@@ -159,6 +150,19 @@ export default function BootcampLanding() {
           </div>
         </div>
       </section>
+
+
+          {/* About the Facilitator */}
+      <section className="py-20 bg-zinc-50">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-semibold tracking-tight mb-8 text-black">ABOUT THE FACILITATOR</h2>
+          <p className="text-xl leading-relaxed max-w-3xl mx-auto text-zinc-700">
+            Your daughter will be coached by a certified Adolescent and Teens Coach with years of experience and a deep personal burden for raising confident, purpose-driven girls.
+          </p>
+        </div>
+      </section>
+
+
 
 
           {/* Schedule */}
