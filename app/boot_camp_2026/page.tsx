@@ -3,8 +3,10 @@
 import React from 'react';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
+import Image from 'next/image';
 
 import { FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function BootcampLanding() {
   const scrollToSection = (id: string) => {
@@ -37,6 +39,7 @@ export default function BootcampLanding() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link href="/register">
               <button 
                 onClick={() => scrollToSection('register')}
                 className="px-10 py-4 bg-white text-teal-900 hover:bg-teal-50 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 group w-full sm:w-auto"
@@ -44,6 +47,7 @@ export default function BootcampLanding() {
                 SECURE YOUR SPOT
                 <span className="group-hover:translate-x-1 transition">→</span>
               </button>
+              </Link>
               
                 <a 
                 href="/assets/tHRIVE-tOGETHER-bOOTCAMP-fLIER_4.pdf" 
@@ -62,6 +66,7 @@ export default function BootcampLanding() {
           </div>
         </div>
       </section>
+
 
             {/* Investment Message */}
       <section className="py-16 bg-amber-50 border-b">
@@ -97,14 +102,25 @@ export default function BootcampLanding() {
               </div>
             </div>
 
-            <div className="bg-zinc-900 text-white p-10 rounded-3xl">
-              <h3 className="text-teal-400 font-medium mb-2">THE INVISIBLE MENTOR EFFECT™</h3>
+            <div className="bg-zinc-900 text-white p-4 rounded-3xl">
+              {/* <h3 className="text-teal-400 font-medium mb-2">THE INVISIBLE MENTOR EFFECT™</h3>
               <p className="text-2xl leading-tight">
                 Social media hands them an identity before they discover their own.
               </p>
               <p className="mt-8 text-lg opacity-80">
                 Three days is all it takes to change the direction of her life.
-              </p>
+              </p> */}
+
+                <Image 
+                  src="/assets/hero-bootcamp.jpeg"
+                  alt="The Confident Girls Project Bootcamp"
+                  className="object-cover w-full"
+                  width={60}
+                  height={60}
+                  priority
+                  quality={95}           // High quality
+                  sizes="100vw"          // Important for hero images
+                />
             </div>
           </div>
         </div>

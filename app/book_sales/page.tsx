@@ -23,7 +23,7 @@ const booksCollection =[
 
                 `,
         featureImage: '/assets/TheInvincibleMentor.jpeg',
-        purchaseLink: '#',
+        purchaseLink: 'https://selar.com/l991215523',
 
     },
 
