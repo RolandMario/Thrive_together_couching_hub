@@ -182,7 +182,7 @@ export default function BootcampLanding() {
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <div className=" flex justify-center items-center px-12 py-5 bg-white text-teal-700 rounded-2xl font-semibold text-xl">
                 <FaWhatsapp/>
-                 <a href="https://w.app/thrive_together_boot_camp_2026" > Chat on whatsapp</a>
+                 <a href="https://wa.link/mabnr3" > Chat on whatsapp</a>
             
             </div>
            <a href="/contact" className="px-12 py-5 border-2 border-white rounded-2xl font-semibold text-xl">Send Email</a>

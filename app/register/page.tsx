@@ -35,7 +35,7 @@ export default function RegisterPage() {
       `Registration Fee: ₦45,000%0A` +
       `Please confirm receipt. Thank you!`;
 
-    const phoneNumber = "2347068497568"; // 08037476431 in international format
+    const phoneNumber = "2348037476431"; // 08037476431 in international format
 
     // Open WhatsApp with pre-filled message
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
