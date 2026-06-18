@@ -49,13 +49,7 @@ export default function BootcampLanding() {
               </button>
               </Link>
               
-                <a 
-                href="/assets/tHRIVE-tOGETHER-bOOTCAMP-fLIER_4.pdf" 
-                download="Thrive-Together-Bootcamp-Flyer.pdf"
-                className="px-8 py-4 border border-white/60 hover:bg-white/10 rounded-2xl font-medium text-lg transition w-full sm:w-auto inline-flex items-center justify-center"
-                >
-                DOWNLOAD FULL PROGRAM
-                </a>
+ 
             </div>
             
             <div className="mt-10 text-sm text-teal-200/80 flex items-center justify-center gap-8">
@@ -129,30 +123,42 @@ export default function BootcampLanding() {
       </section>
 
             {/* Program Details */}
-      <section id="program" className="py-20 border-t">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold tracking-tighter text-black">Program Details</h2>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-8 text-lg max-w-3xl mx-auto">
-            <div className="space-y-6 text-gray-700">
-              <div><strong>Dates:</strong> 26th – 28th August, 2026</div>
-              <div><strong>Time:</strong> 9:00 AM - 3:00 PM Daily</div>
-              <div><strong>Ages:</strong> 12 - 17 Years</div>
-              <div><strong>Fee:</strong> ₦45,000</div>
-            </div>
-            <div className="space-y-6 text-black">
-              <div><strong>Location:</strong> Amadeo Event Centre, Ebeano Tunnel Crossing, Enugu</div>
-              <div><strong>Group Size:</strong> 30 Girls Only</div>
-              <div><strong>Includes:</strong> Workbook + 30-Day Alumni Support</div>
-            </div>
+    <section id="program" className="py-20 border-t bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-5xl font-bold tracking-tighter text-black">
+            Program Details
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 text-lg max-w-3xl mx-auto">
+          <div className="space-y-6 text-gray-700">
+            <div><strong>Dates:</strong> 26th – 28th August, 2026</div>
+            <div><strong>Time:</strong> 9:00 AM - 3:00 PM Daily</div>
+            <div><strong>Ages:</strong> 12 - 17 Years</div>
+            <div><strong>Fee:</strong> ₦45,000</div>
+          </div>
+          <div className="space-y-6 text-black">
+            <div><strong>Location:</strong> Amadeo Event Centre, Ebeano Tunnel Crossing, Enugu</div>
+            <div><strong>Group Size:</strong> 30 Girls Only</div>
+            <div><strong>Includes:</strong> Workbook + 30-Day Alumni Support</div>
           </div>
         </div>
-      </section>
 
-
-          {/* About the Facilitator */}
+        {/* Centered Link - Not full width */}
+        <div className="flex justify-center mt-12">
+          <Link 
+            href="/register" 
+            className="px-10 py-4 bg-teal-600 hover:bg-teal-700 text-white rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 group w-fit mx-auto"
+          >
+            BOOK HER SEAT
+            <span className="group-hover:translate-x-1 transition">→</span>
+          </Link>
+        </div>
+      </div>
+    </section>
+              {/* About the Facilitator */}
       <section className="py-20 bg-zinc-50">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-semibold tracking-tight mb-8 text-black">ABOUT THE FACILITATOR</h2>
@@ -174,6 +180,15 @@ export default function BootcampLanding() {
             {/* Day 1, Day 2, Day 3 cards - abbreviated for brevity but fully functional */}
             {/* Full detailed cards are in the actual file */}
           </div>
+          <div className='flex justify-center mt-12'>
+               <a 
+                href="/assets/tHRIVE-tOGETHER-bOOTCAMP-fLIER_4.pdf" 
+                download="Thrive-Together-Bootcamp-Flyer.pdf"
+                className="px-8 py-4 border border-white/60 hover:bg-white/10 rounded-2xl font-medium text-lg transition w-full sm:w-auto inline-flex items-center justify-center"
+                >
+                DOWNLOAD DETAILED INFORMATION
+              </a>
+            </div>
         </div>
       </section>
 
@@ -189,7 +204,15 @@ export default function BootcampLanding() {
                  <a href="https://wa.link/mabnr3" > Chat on whatsapp</a>
             
             </div>
-           <a href="/contact" className="px-12 py-5 border-2 border-white rounded-2xl font-semibold text-xl">Send Email</a>
+           {/* <a href="/contact" className="px-12 py-5 border-2 border-white rounded-2xl font-semibold text-xl">Send Email</a> */}
+          <Link 
+            href="/register" 
+            className="px-10 py-4 bg-teal-600 hover:bg-teal-700 text-white rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 group w-fit mx-auto"
+              >
+            ENROLL HER NOW
+            <span className="group-hover:translate-x-1 transition">→</span>
+          </Link>
+          
           </div>
         </div>
       </section>

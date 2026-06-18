@@ -91,7 +91,7 @@ export default function RegisterPage() {
                     min="12"
                     max="17"
                     className="w-full text-gray-600 px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
-                    placeholder="13"
+                    placeholder="12"
                   />
                 </div>
 
@@ -136,7 +136,7 @@ export default function RegisterPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2 text-black">School (Optional)</label>
+                  <label className="block text-sm font-medium mb-2 text-black">Participant's School (Optional)</label>
                   <input
                     type="text"
                     name="school"
@@ -145,6 +145,12 @@ export default function RegisterPage() {
                     className="w-full px-5 py-4 text-gray-600 border border-gray-300 rounded-2xl focus:outline-none focus:border-teal-600"
                     placeholder="School name"
                   />
+                </div>
+                <div className="bg-green-50 border border-green-200 p-5 rounded-2xl text-sm">
+                  <p className="font-medium text-green-800">Payment Notice:</p>
+                  <p className="mt-2 text-green-700">
+                    Ensure you make payment(₦45,000) into the account below before submitting the form
+                  </p>
                 </div>
               </div>
 
